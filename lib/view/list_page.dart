@@ -37,6 +37,8 @@ class ListPage extends ConsumerWidget {
                                       return data.isNotEmpty
                                           ? ListView(
                                               shrinkWrap: true,
+                                              physics:
+                                                  const NeverScrollableScrollPhysics(),
                                               children: data
                                                   .where((element) =>
                                                       element.title! ==
