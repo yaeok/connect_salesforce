@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:heroku_connected/view/list_page.dart';
 import '../model/coffee.dart';
 import '../view_model/provider.dart';
 
@@ -11,7 +12,18 @@ class HomePage extends ConsumerWidget {
     final asyncValue = ref.watch(listProvider); //取得したAPIデータの監視
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Coffee List'),
+        title: const Text('お客さま情報リスト'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.add),
+            onPressed: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ListPage()),
+              )
+            },
+          ),
+        ],
       ),
       body: Center(
         child: asyncValue.when(
