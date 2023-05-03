@@ -13,7 +13,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       title: 'Coffee List',
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       home: const HomePage(),
     );
   }

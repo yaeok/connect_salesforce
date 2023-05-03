@@ -1,4 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:heroku_connected/model/pos.dart';
+import 'package:heroku_connected/model/poslist/poslist.dart';
 import '../model/coffee.dart';
 import '../repository/repository.dart';
 
@@ -9,4 +11,19 @@ final repositoryProvider = Provider((ref) => Repository());
 final listProvider = FutureProvider<List<Coffee>>((ref) async {
   final repository = ref.read(repositoryProvider);
   return await repository.fetchList();
+});
+
+final dataProvider = FutureProvider<List<Coffee>>((ref) async {
+  final repository = ref.read(repositoryProvider);
+  return await repository.fetchData();
+});
+
+final posDataProvider = FutureProvider<List<Pos>>((ref) async {
+  final repository = ref.read(repositoryProvider);
+  return await repository.fetchPosList();
+});
+
+final posListPeovider = FutureProvider<List<PosList>>((ref) async {
+  final repository = ref.read(repositoryProvider);
+  return await repository.fetchPosListData();
 });
