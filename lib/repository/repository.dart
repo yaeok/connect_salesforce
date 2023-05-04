@@ -1,6 +1,6 @@
 import 'package:heroku_connected/service/pos_api_client.dart';
 
-import '../service/coffee_api_client.dart';
+import '../service/account_api_client.dart';
 
 class Repository {
   final api = CoffeeApiClient();

@@ -2,17 +2,17 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter/foundation.dart';
 
 // build_runnerを使うことで自動生成されるファイル
-part 'poslist.freezed.dart';
-part 'poslist.g.dart';
+part 'posdata.freezed.dart';
+part 'posdata.g.dart';
 
 @freezed
-class PosList with _$PosList {
-  factory PosList({
+class PosData with _$PosData {
+  factory PosData({
     String? name,
     String? title,
     int? sum,
-  }) = _PosList;
+  }) = _PosData;
 
-  factory PosList.fromJson(Map<String, dynamic> json) =>
-      _$PosListFromJson(json);
+  factory PosData.fromJson(Map<String, dynamic> json) =>
+      _$PosDataFromJson(json);
 }

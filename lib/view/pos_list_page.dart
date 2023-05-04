@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:heroku_connected/model/pos.dart';
-import 'package:heroku_connected/model/poslist/poslist.dart';
+import 'package:heroku_connected/model/posdata/posdata.dart';
+import '../model/pos/pos.dart';
 import '../view_model/provider.dart';
 
-class ListPage extends ConsumerWidget {
-  const ListPage({Key? key}) : super(key: key);
+class PosListPage extends ConsumerWidget {
+  const PosListPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -30,7 +30,8 @@ class ListPage extends ConsumerWidget {
                               children: <Widget>[
                                 ListTile(
                                   title: Text(pos.title!),
-                                  trailing: Text(pos.sum!.toString()),
+                                  trailing:
+                                      Text('合計金額：¥' + pos.sum!.toString()),
                                 ),
                                 posList.when(
                                     data: (data) {
@@ -43,7 +44,7 @@ class ListPage extends ConsumerWidget {
                                                   .where((element) =>
                                                       element.title! ==
                                                       pos.title!)
-                                                  .map((PosList data) => Card(
+                                                  .map((PosData data) => Card(
                                                           child: ListTile(
                                                         title: Text(data.name!),
                                                       )))

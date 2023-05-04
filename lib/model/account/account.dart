@@ -2,15 +2,16 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter/foundation.dart';
 
 // build_runnerを使うことで自動生成されるファイル
-part 'coffee.freezed.dart';
-part 'coffee.g.dart';
+part 'account.freezed.dart';
+part 'account.g.dart';
 
 @freezed
-class Coffee with _$Coffee {
-  factory Coffee({
+class Account with _$Account {
+  factory Account({
     String? name,
     String? sfid,
-  }) = _Coffee;
+  }) = _Account;
 
-  factory Coffee.fromJson(Map<String, dynamic> json) => _$CoffeeFromJson(json);
+  factory Account.fromJson(Map<String, dynamic> json) =>
+      _$AccountFromJson(json);
 }

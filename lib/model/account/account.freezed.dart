@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'coffee.dart';
+part of 'account.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,53 +14,53 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-Coffee _$CoffeeFromJson(Map<String, dynamic> json) {
-  return _Coffee.fromJson(json);
+Account _$AccountFromJson(Map<String, dynamic> json) {
+  return _Account.fromJson(json);
 }
 
 /// @nodoc
-class _$CoffeeTearOff {
-  const _$CoffeeTearOff();
+class _$AccountTearOff {
+  const _$AccountTearOff();
 
-  _Coffee call({String? name, String? sfid}) {
-    return _Coffee(
+  _Account call({String? name, String? sfid}) {
+    return _Account(
       name: name,
       sfid: sfid,
     );
   }
 
-  Coffee fromJson(Map<String, Object?> json) {
-    return Coffee.fromJson(json);
+  Account fromJson(Map<String, Object?> json) {
+    return Account.fromJson(json);
   }
 }
 
 /// @nodoc
-const $Coffee = _$CoffeeTearOff();
+const $Account = _$AccountTearOff();
 
 /// @nodoc
-mixin _$Coffee {
+mixin _$Account {
   String? get name => throw _privateConstructorUsedError;
   String? get sfid => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CoffeeCopyWith<Coffee> get copyWith => throw _privateConstructorUsedError;
+  $AccountCopyWith<Account> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CoffeeCopyWith<$Res> {
-  factory $CoffeeCopyWith(Coffee value, $Res Function(Coffee) then) =
-      _$CoffeeCopyWithImpl<$Res>;
+abstract class $AccountCopyWith<$Res> {
+  factory $AccountCopyWith(Account value, $Res Function(Account) then) =
+      _$AccountCopyWithImpl<$Res>;
   $Res call({String? name, String? sfid});
 }
 
 /// @nodoc
-class _$CoffeeCopyWithImpl<$Res> implements $CoffeeCopyWith<$Res> {
-  _$CoffeeCopyWithImpl(this._value, this._then);
+class _$AccountCopyWithImpl<$Res> implements $AccountCopyWith<$Res> {
+  _$AccountCopyWithImpl(this._value, this._then);
 
-  final Coffee _value;
+  final Account _value;
   // ignore: unused_field
-  final $Res Function(Coffee) _then;
+  final $Res Function(Account) _then;
 
   @override
   $Res call({
@@ -81,28 +81,28 @@ class _$CoffeeCopyWithImpl<$Res> implements $CoffeeCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$CoffeeCopyWith<$Res> implements $CoffeeCopyWith<$Res> {
-  factory _$CoffeeCopyWith(_Coffee value, $Res Function(_Coffee) then) =
-      __$CoffeeCopyWithImpl<$Res>;
+abstract class _$AccountCopyWith<$Res> implements $AccountCopyWith<$Res> {
+  factory _$AccountCopyWith(_Account value, $Res Function(_Account) then) =
+      __$AccountCopyWithImpl<$Res>;
   @override
   $Res call({String? name, String? sfid});
 }
 
 /// @nodoc
-class __$CoffeeCopyWithImpl<$Res> extends _$CoffeeCopyWithImpl<$Res>
-    implements _$CoffeeCopyWith<$Res> {
-  __$CoffeeCopyWithImpl(_Coffee _value, $Res Function(_Coffee) _then)
-      : super(_value, (v) => _then(v as _Coffee));
+class __$AccountCopyWithImpl<$Res> extends _$AccountCopyWithImpl<$Res>
+    implements _$AccountCopyWith<$Res> {
+  __$AccountCopyWithImpl(_Account _value, $Res Function(_Account) _then)
+      : super(_value, (v) => _then(v as _Account));
 
   @override
-  _Coffee get _value => super._value as _Coffee;
+  _Account get _value => super._value as _Account;
 
   @override
   $Res call({
     Object? name = freezed,
     Object? sfid = freezed,
   }) {
-    return _then(_Coffee(
+    return _then(_Account(
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -117,11 +117,11 @@ class __$CoffeeCopyWithImpl<$Res> extends _$CoffeeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Coffee with DiagnosticableTreeMixin implements _Coffee {
-  _$_Coffee({this.name, this.sfid});
+class _$_Account with DiagnosticableTreeMixin implements _Account {
+  _$_Account({this.name, this.sfid});
 
-  factory _$_Coffee.fromJson(Map<String, dynamic> json) =>
-      _$$_CoffeeFromJson(json);
+  factory _$_Account.fromJson(Map<String, dynamic> json) =>
+      _$$_AccountFromJson(json);
 
   @override
   final String? name;
@@ -130,14 +130,14 @@ class _$_Coffee with DiagnosticableTreeMixin implements _Coffee {
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'Coffee(name: $name, sfid: $sfid)';
+    return 'Account(name: $name, sfid: $sfid)';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-      ..add(DiagnosticsProperty('type', 'Coffee'))
+      ..add(DiagnosticsProperty('type', 'Account'))
       ..add(DiagnosticsProperty('name', name))
       ..add(DiagnosticsProperty('sfid', sfid));
   }
@@ -146,7 +146,7 @@ class _$_Coffee with DiagnosticableTreeMixin implements _Coffee {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Coffee &&
+            other is _Account &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.sfid, sfid));
   }
@@ -159,19 +159,19 @@ class _$_Coffee with DiagnosticableTreeMixin implements _Coffee {
 
   @JsonKey(ignore: true)
   @override
-  _$CoffeeCopyWith<_Coffee> get copyWith =>
-      __$CoffeeCopyWithImpl<_Coffee>(this, _$identity);
+  _$AccountCopyWith<_Account> get copyWith =>
+      __$AccountCopyWithImpl<_Account>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CoffeeToJson(this);
+    return _$$_AccountToJson(this);
   }
 }
 
-abstract class _Coffee implements Coffee {
-  factory _Coffee({String? name, String? sfid}) = _$_Coffee;
+abstract class _Account implements Account {
+  factory _Account({String? name, String? sfid}) = _$_Account;
 
-  factory _Coffee.fromJson(Map<String, dynamic> json) = _$_Coffee.fromJson;
+  factory _Account.fromJson(Map<String, dynamic> json) = _$_Account.fromJson;
 
   @override
   String? get name;
@@ -179,5 +179,6 @@ abstract class _Coffee implements Coffee {
   String? get sfid;
   @override
   @JsonKey(ignore: true)
-  _$CoffeeCopyWith<_Coffee> get copyWith => throw _privateConstructorUsedError;
+  _$AccountCopyWith<_Account> get copyWith =>
+      throw _privateConstructorUsedError;
 }

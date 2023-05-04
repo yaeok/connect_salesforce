@@ -1,18 +1,18 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'poslist.dart';
+part of 'posdata.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PosList _$$_PosListFromJson(Map<String, dynamic> json) => _$_PosList(
+_$_PosData _$$_PosDataFromJson(Map<String, dynamic> json) => _$_PosData(
       name: json['name'] as String?,
       title: json['title'] as String?,
       sum: json['sum'] as int?,
     );
 
-Map<String, dynamic> _$$_PosListToJson(_$_PosList instance) =>
+Map<String, dynamic> _$$_PosDataToJson(_$_PosData instance) =>
     <String, dynamic>{
       'name': instance.name,
       'title': instance.title,
